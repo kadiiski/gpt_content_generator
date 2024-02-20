@@ -11,13 +11,13 @@ const config = {
   useSubTopicIntro: 1,
   subTopicIntroLength: 3,
   subTopicLength: 10,
-  gptKey: ""
+  gptKey: "YOUR-KEY-HERE"
 }
 
 console.log('CONFIG:', config)
 
 const api = new ChatGPTAPI({
-  apiKey: "your-api-key-here",
+  apiKey: config.gptKey,
   completionParams: {
     model: 'gpt-4',
   }
